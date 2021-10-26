@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.mouad-bg{
+    background: rgb(37, 37, 37) url("../pictures/pexels-scott-webb-593158.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-bottom: 4em;
+}
+
+.mouad-bg li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.mouad-bg header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.mouad-bg h3{
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgb(24, 24, 24);
+} 
+
+.mouad-bg button{
+    padding: 9px;
+    background-color: #111;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.mouad-bg button:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+section{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: rgb(53, 53, 53);
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.mouad-bg p {
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.programming{
+    margin: 0;
+}
+
+.left-programming{
+    width: 370px;
+    margin: 60px auto;
+    color: black;
+    list-style: none;
+}
+
+.left-programming h1{
+    text-align: center;
+}
+
+.left-programming li{
+    margin: 20px 0;
+}
+
+.bar{
+    background:rgb(151, 151, 151) ;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #0c0c0cb3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #0c0c0cb3;
+}
+
+.cpp{
+    width: 90%;
+    animation: cpp 2s;
+}
+
+.htmlcss{
+    width: 70%;
+    animation: html 2s;
+}
+
+.python{
+    width: 60%;
+    animation: python 2s;
+}
+
+.js{
+    width: 20%;
+    animation: js 2s;
+}
+
+@keyframes cpp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+.experience{
+    margin: 0;
+}
+
+.left-experience{
+    width: 370px;
+    margin: 60px auto;
+    color: black;
+    list-style: none;
+}
+
+.left-experience h1{
+    text-align: center;
+}
+
+.left-experience li{
+    margin: 20px 0;
+}
+
+.left-experience li{
+    margin: 20px 0;
+}
+
+.ds{
+    width: 50%;
+    animation: ds 2s;
+}
+
+.ps{
+    width: 70%;
+    animation: ps 2s;
+}
+
+.web{
+    width: 85%;
+    animation: web 2s;
+}
+
+@keyframes ds{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes ps{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes web{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.myprofiles{
+    margin: 0;
+}
+
+.profiles{
+    background: rgb(255, 255, 255);
+    background-position: 10px;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.profiles a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin: 0 10px;
+}
+
+.profiles a:hover{
+    color: gray;
+    transition: color 0.2s;
+}
+
+img{
+    display: none;
+}
+
+@media (min-width: 730px) {
+    section{
+        margin: 0 4em;
+    }
+}
+
+@media (min-width: 930px){
+    section.programming {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "bowl content";
+    } 
+    .left-programming{
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+    section.programming img{
+        display: grid;
+        grid-area: bowl;
+        width: 70%;
+    }
+
+    section.experience{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        background-color: rgb(114, 114, 114);
+    }
+
+    .left-experience{
+        float: left;
+        margin-top: 200px;
+    }
+    section.experience img{
+        display: grid;
+        width: 100%;
+        float: right;
+    }
+}
+
+
+header{
+    animation: fadeIn 2s forwards;
+}
+.top{
+    animation: fadeIn 2s forwards;
+}
+.programming{
+    animation: fadeIn 2s forwards;
+}
+.experience{
+    animation: fadeIn 2s forwards;
+}
+.myprofiles{
+    animation: fadeIn 2s forwards;
+}
+.contact-me{
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 1;
+        transform: 0;
+    }
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2e2e2e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}

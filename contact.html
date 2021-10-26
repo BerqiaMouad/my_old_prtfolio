@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="my-bar">
+        <header>
+            <h3><a href="index.html">Berqia Mouad</a></h3>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>                </ul>
+            </nav>
+            <a href="contact.html" class="cta"><button>Contact</button></a>
+        </header>
+    </div>
+    <section class="contact-me">
+        <div class="conatctme">
+            <h1><span>Contact Me</span></h1>
+
+            <form action="https://formsubmit.co/berqiamouad@gmail.com" class="contact-form" method="post">
+                <input type="hidden" name="_next" value="https://berqiamouad.netlify.app/thanks.html">
+                <input type="text" name="name" class="contact-form-text" placeholder="Your Name" required>
+                <input type="text" class="contact-form-text" name="email" placeholder="Your Email Adress" required>
+                <textarea class="contact-form-text" name="message" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+
+            </form>
+        </div>
+    </section>
+
+    <script>
+        $("document").ready($(".loader-wrapper").fadeOut("slow"));
+    </script>
+</body>
+</html>
